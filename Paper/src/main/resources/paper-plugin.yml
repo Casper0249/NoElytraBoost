@@ -1,0 +1,6 @@
+name: NoElytraBoost
+version: '${project.version}'
+main: nl.casperlambers.noelytraboost.paper.NoElytraBoost
+api-version: '1.17'
+authors: [Casper0249]
+description: Disables boosting elytras with fireworks
