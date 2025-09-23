@@ -1,0 +1,5 @@
+name: NoElytraBoost
+version: '1.0'
+main: nl.casperlambers.noelytraboost.NoElytraBoostPlugin
+description: Disables boosting elytras with fireworks
+api-version: '1.71'
