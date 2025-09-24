@@ -11,7 +11,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 public class Command_noelytraboost {
     public LiteralCommandNode<CommandSourceStack> command() {
         return Commands.literal("noelytraboost")
-                .executes(this::main)
+                .executes(this::mainCommand)
                 .then(
                         Commands.literal("reload")
                                 .executes(this::reload)
@@ -24,7 +24,7 @@ public class Command_noelytraboost {
         return 1;
     }
 
-    private int main(CommandContext<CommandSourceStack> commandSourceStackCommandContext) {
+    private int mainCommand(CommandContext<CommandSourceStack> commandSourceStackCommandContext) {
         commandSourceStackCommandContext.getSource().getSender().sendMessage(
                 Component.text("NoElytraBoost", NamedTextColor.AQUA)
                         .append(Component.text(" version 1.0", NamedTextColor.WHITE))
