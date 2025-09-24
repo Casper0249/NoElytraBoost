@@ -11,9 +11,11 @@ import net.kyori.adventure.text.format.NamedTextColor;
 public class Command_noelytraboost {
     public LiteralCommandNode<CommandSourceStack> command() {
         return Commands.literal("noelytraboost")
+                .requires(commandSourceStack -> commandSourceStack.getSender().hasPermission("noelytraboost.maincommand"))
                 .executes(this::mainCommand)
                 .then(
                         Commands.literal("reload")
+                                .requires(commandSourceStack -> commandSourceStack.getSender().hasPermission("noelytraboost.reload"))
                                 .executes(this::reload)
                 ).build();
     }

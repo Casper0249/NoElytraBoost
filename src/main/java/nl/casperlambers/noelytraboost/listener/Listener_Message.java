@@ -7,7 +7,11 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 
 public class Listener_Message implements Listener {
-    public static Component message = null;
+    private final Component message;
+
+    public Listener_Message(Component message) {
+        this.message = message;
+    }
 
     @EventHandler(priority = EventPriority.LOW)
     public void sendMessage(PlayerElytraBoostEvent event) {

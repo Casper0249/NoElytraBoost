@@ -9,6 +9,6 @@ send-message: false
 message: "<red>Boosting elytras is disabled</red>"
 
 
-# Set these to true if you want opped players or players with the "noelytraboost.override" permission to be use elytra boosting
+# Set these to true if you want opped players and/or players with the "noelytraboost.override" permission to be use elytra boosting
 allow-op-players: false
 allow-permitted-players: false
