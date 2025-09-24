@@ -19,11 +19,14 @@ public class NoElytraBoostPlugin extends JavaPlugin {
 
     void reload() {
         Listener_Message.message = null;
+
         HandlerList.unregisterAll(new Listener_Message());
         HandlerList.unregisterAll(new Listener_NoOverride());
         HandlerList.unregisterAll(new Listener_OpOverride());
         HandlerList.unregisterAll(new Listener_PermissionOverride());
         HandlerList.unregisterAll(new Listener_OpAndPermissionOverride());
+
+        load();
     }
 
     private void load() {
