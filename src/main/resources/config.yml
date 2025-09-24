@@ -1,0 +1,14 @@
+# NoElytraBoost config
+# This is the master switch to disable/enable the plugin
+# You can set this to false if you want to (temporarily) allow players to boost elytras
+plugin-enabled: true
+
+# Set this to true if you want to players who try to boost their elytra
+# Message supports MiniMessage formatting (colors, decorations, etc...), use https://webui.advntr.dev/ to generate a formatted message
+send-message: false
+message: "<red>Boosting elytras is disabled</red>"
+
+
+# Set these to true if you want opped players or players with the "noelytraboost.override" permission to be use elytra boosting
+allow-op-players: false
+allow-permitted-players: false

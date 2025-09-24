@@ -1,0 +1,21 @@
+package nl.casperlambers.noelytraboost;
+
+import io.papermc.paper.plugin.bootstrap.BootstrapContext;
+import io.papermc.paper.plugin.bootstrap.PluginBootstrap;
+import io.papermc.paper.plugin.lifecycle.event.LifecycleEvent;
+import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
+import net.minecraft.commands.Commands;
+
+import java.util.List;
+
+public class Bootstrapper implements PluginBootstrap {
+    @Override
+    public void bootstrap(BootstrapContext context) {
+        context.getLifecycleManager().registerEventHandler(LifecycleEvents.COMMANDS, commands -> {
+            commands.registrar().register(
+                    new Command_noelytraboost().command(),
+                    "Main command"
+            );
+        });
+    }
+}
